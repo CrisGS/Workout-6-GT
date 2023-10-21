@@ -183,6 +183,7 @@ dialog::backdrop {
     height: 2rem;
     background: transparent;
     text-align: center;
+    margin: auto;
 }
 
 .modal-content {
