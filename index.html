@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Let's talk about everything</h1>
+    <div id="clock"></div>
+    <div class="main">
+      <form method="post">
+        <fieldset class="personal-info">
+          <legend>Personal Information</legend>
+          <label for="name">
+            Name <br><input type="text"  required id="name" />
+          </label>
+          <label for="city">
+            City <br><input type="text" required id="city" />
+          </label>
+          <label for="birthday">
+            Birthday <br><input type="date" required id="birthday" min="1920-01-01" max="2022-12-31"/>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Gender</legend>
+          <div>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </div>
+          <div>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>What's your hobby</legend>
+          <div>
+            <input type="checkbox" id="movies" name="hobby" value="movies" />
+            <label for="movies">Watch Movies</label>
+          </div>
+          <div>
+            <input type="checkbox" id="anime" name="hobby" value="anime" />
+            <label for="anime">Watch Anime</label>
+          </div>
+          <div>
+            <input type="checkbox" id="gaming" name="hobby" value="gaming" />
+            <label for="gaming">Play Games</label>
+          </div>
+          <div>
+            <input type="checkbox" id="programming" name="hobby" value="programming" />
+            <label for="programming">Programming</label>
+          </div>
+          <div>
+            <input type="checkbox" id="reading" name="hobby" value="reading" />
+            <label for="reading">Reading</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Do you like cats?</legend>
+          <label for="answer">Choose your answer:</label><br>
+          <select name="cat" id="answer">
+            <option value="">--Please choose an option--</option>
+            <option id="like-cats" value="yes">Yes</option>
+            <option id="dont-like-cats" value="no">No</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="about_user">Tell me something about yourself:</label>
+          <textarea id="about_user" name="about_user" rows="10" cols="50">
+          </textarea>
+        </fieldset>
+        <button type="submit" id="submit_button">Submit</button>
+      </form>
+    </div>
+    <footer>
+      © Cristea Sorin-Gabriel - GT JavaScript Explorer 2023.
+    </footer>
+    <dialog>
+      <h2 class="modal-title"></h2>
+      <div class="modal-content">
+        <ul>
+          <li class="modal-city"></li>
+          <li class="modal-birthday"></li>
+          <li class="modal-hobby"></li>
+          <li class="modal-pet"></li>
+          <div class="image-container"></div>
+          <li class="modal-about"></li>
+        </ul>
+      </div>
+      <button class="close-button">Close</button>
+    </dialog>
+  </body>
+</html>
