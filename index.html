@@ -12,7 +12,7 @@
     <h1>Let's talk about everything</h1>
     <div id="clock"></div>
     <div class="main">
-      <form method="post">
+      <form>
         <fieldset class="personal-info">
           <legend>Personal Information</legend>
           <label for="name">
@@ -74,8 +74,7 @@
         </fieldset>
         <fieldset>
           <label for="about_user">Tell me something about yourself:</label>
-          <textarea id="about_user" name="about_user" rows="10" cols="50">
-          </textarea>
+          <textarea id="about_user" name="about_user" required></textarea>
         </fieldset>
         <button type="submit" id="submit_button">Submit</button>
       </form>

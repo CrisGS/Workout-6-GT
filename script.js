@@ -53,7 +53,7 @@ function calculateAge(birthdate) {
 
 const form = document.querySelector("form");
 
-submitButton.addEventListener("submit", function(e) {
+form.addEventListener("submit", function(e) {
     e.preventDefault();
     if (maleUser.checked === true) {
         modalTitle.textContent = `Hello Mr. ${userName.value}!`;
@@ -99,7 +99,6 @@ submitButton.addEventListener("submit", function(e) {
 
     dialog.showModal();
 });
-
 closeBtn.addEventListener("click", function() {
 	dialog.close();
 });
